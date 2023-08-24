@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSave_Settings"/>
+    <addaction name="actionLoad_Settings"/>
+   </widget>
+   <widget class="QMenu" name="menuview">
+    <property name="title">
+     <string>View</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menutools">
+    <property name="title">
+     <string>Connect</string>
+    </property>
+    <addaction name="actionSerialPort"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSetting">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuview"/>
+   <addaction name="menutools"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuSetting"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionSave_Settings">
+   <property name="icon">
+    <iconset resource="misc/icons.qrc">
+     <normaloff>:/save_settings_icon.png</normaloff>:/save_settings_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Settings</string>
+   </property>
+  </action>
+  <action name="actionSerialPort">
+   <property name="icon">
+    <iconset resource="misc/icons.qrc">
+     <normaloff>:/serial_connect_icon.png</normaloff>:/serial_connect_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>SerialPort</string>
+   </property>
+  </action>
+  <action name="actionLoad_Settings">
+   <property name="icon">
+    <iconset resource="misc/icons.qrc">
+     <normaloff>:/load_settings_icon.png</normaloff>:/load_settings_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Load Settings</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="misc/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
